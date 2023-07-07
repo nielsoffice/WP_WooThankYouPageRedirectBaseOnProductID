@@ -31,7 +31,7 @@ function _action_woocommerce_thankyou( $order_id ) {
 
   // Make the custom redirection when a targeted product has been found in the order
   if ( $redirection ) {
-      wp_safe_redirect( home_url( '/thank-you-enroled/' ) );
+      wp_safe_redirect( home_url( '/thank-you/' ) );
       exit;
   }
 }
