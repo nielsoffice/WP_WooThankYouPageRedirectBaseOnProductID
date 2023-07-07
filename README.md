@@ -3,8 +3,8 @@ WordPress woocommerce redirect thank you page base on product ID
 
 ```PHP
 
-add_action( 'woocommerce_thankyou', 'bba_action_woocommerce_thankyou', 10, 1 );
-function bba_action_woocommerce_thankyou( $order_id ) {
+add_action( 'woocommerce_thankyou', '_action_woocommerce_thankyou', 10, 1 );
+function _action_woocommerce_thankyou( $order_id ) {
 
   if( ! $order_id ) {
       return;
